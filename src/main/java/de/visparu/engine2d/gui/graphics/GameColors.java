@@ -1,0 +1,23 @@
+package de.visparu.engine2d.gui.graphics;
+
+public enum GameColors {
+    BLACK(0, 0, 0),
+    RED(255, 0, 0),
+    GREEN(0, 255, 0),
+    BLUE(0, 0, 255),
+    YELLOW(255, 255, 0),
+    CYAN(0, 255, 255),
+    MAGENTA(255, 0, 255),
+    WHITE(255, 255, 255),
+    ;
+    
+    private final GameColor color;
+    
+    GameColors(int red, int green, int blue) {
+        this.color = new GameColor(red, green, blue);
+    }
+    
+    public GameColor getGameColor() {
+        return this.color;
+    }
+}
